@@ -1,4 +1,4 @@
-let utils = {
+export let utils = {
 
     /**
      * @param {string} className
@@ -57,5 +57,3 @@ let utils = {
     },
 
 }
-
-export default utils;
