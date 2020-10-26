@@ -1,11 +1,12 @@
 {
   "name": "@insite/utils",
-  "version": "0.0.3",
-  "description": "Fonctions utiles",
+  "version": "0.0.5",
+  "description": "Various useful javascript functions",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "d4vm",
-  "license": "MIT"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmoret/utils/issues"
+  },
+  "homepage": "https://github.com/davidmoret/utils"
 }
