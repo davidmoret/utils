@@ -4,6 +4,16 @@ export let utils = {
      * @param {string} className
      * @return {HTMLElement}
      */
+    createButton(className) {
+        let button = document.createElement('button')
+        button.setAttribute('class', className)
+        return button;
+    },
+
+    /**
+     * @param {string} className
+     * @return {HTMLElement}
+     */
     createDivWithClass(className) {
         let div = document.createElement('div')
         div.setAttribute('class', className)

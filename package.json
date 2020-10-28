@@ -1,6 +1,6 @@
 {
   "name": "@insite/utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Various useful javascript functions",
   "main": "index.js",
   "author": "d4vm",
