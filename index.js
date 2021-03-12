@@ -1,5 +1,40 @@
 export let utils = {
 
+
+    /**
+     * @param {HTMLElement} a
+     * @param {HTMLElement} b
+     */
+    getDistanceBetweenElements(a, b) {
+        const aPosition = this.getPositionAtCenter(a);
+        const bPosition = this.getPositionAtCenter(b);
+        return Math.hypot(aPosition.x - bPosition.x, aPosition.y - bPosition.y);
+    },
+
+    /**
+     * @param {HTMLElement} element
+     */
+    getPositionAtCenter(element) {
+        const {top, left, width, height} = element.getBoundingClientRect();
+        return {
+            x: left + width / 2,
+            y: top + height / 2
+        };
+    },
+
+    /**
+     * @param {HTMLElement} elem
+     * @param {selector} selector
+     */
+    getNextSibling(elem, selector) {
+        var sibling = elem.nextElementSibling;
+        if (!selector) return sibling;
+        while (sibling) {
+            if (sibling.matches(selector)) return sibling;
+            sibling = sibling.nextElementSibling;
+        }
+    },
+
     /**
      * @param {string} className
      * @return {HTMLElement}

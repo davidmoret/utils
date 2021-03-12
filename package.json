@@ -1,6 +1,6 @@
 {
   "name": "@insite/utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Various useful javascript functions",
   "main": "index.js",
   "author": "d4vm",
@@ -8,5 +8,8 @@
   "bugs": {
     "url": "https://github.com/davidmoret/utils/issues"
   },
-  "homepage": "https://github.com/davidmoret/utils"
+  "homepage": "https://github.com/davidmoret/utils",
+  "publishConfig": {
+    "access": "public"
+  }
 }
