@@ -1,6 +1,5 @@
 export let utils = {
 
-
     /**
      * @param {HTMLElement} a
      * @param {HTMLElement} b
@@ -49,7 +48,7 @@ export let utils = {
      * @param {string} className
      * @return {HTMLElement}
      */
-    createDivWithClass(className) {
+    createDiv(className) {
         let div = document.createElement('div')
         div.setAttribute('class', className)
         return div;
@@ -61,7 +60,7 @@ export let utils = {
      * @param {string} label
      * @return {HTMLElement}
      */
-    createLinkWithClass(className, href, label) {
+    createLink(className, href, label) {
         let a = document.createElement('a')
         a.setAttribute('class', className)
         a.setAttribute('href', href)
